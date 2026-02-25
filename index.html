@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aroma Kofe | Müdrik Dad</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">☕ Aroma Kofe</div>
+        <ul>
+          <li><a href="#home">Ana Səhifə</a></li>
+          <li><a href="#menu">Kofelər</a></li>
+          <li><a href="#desserts">Desertlər</a></li>
+          <li><a href="#footer">Əlaqə</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Ruhunuzu isidən bir fincan kofe</h1>
+        <p>Hər qurtumda bir hekayə, hər fincanda bir hüzur var.</p>
+        <a href="#menu" class="btn">Menyunu Gör</a>
+      </div>
+    </section>
+
+    <section id="menu">
+      <h2 class="section-title">Populyar Dadlar</h2>
+      <div class="menu-container">
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/espresso.webp" alt="Espresso" />
+          </div>
+          <h3>Espresso</h3>
+          <p>Sərt və enerjili bir başlanğıc.</p>
+          <span class="price">3.00 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Espresso')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img
+              src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=400"
+              alt="Cappuccino"
+            />
+          </div>
+          <h3>Cappuccino</h3>
+          <p>Zərif köpük və mükəmməl balans.</p>
+          <span class="price">4.00 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Cappuccino')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/americano coffee.jpeg" alt="Americano" />
+          </div>
+          <h3>Americano</h3>
+          <p>Uzun və yumşaq içimli klassika.</p>
+          <span class="price">3.50 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Americano')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/Cafe_au_lait.jpg" alt="Caffè Latte" />
+          </div>
+          <h3>Caffè Latte</h3>
+          <p>Yumşaq içim və ipək kimi südün qovuşduğu dincəlmə anı.</p>
+          <span class="price">3.50 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Caffè Latte')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/Mocha.png" alt="Mocha" />
+          </div>
+          <h3>Mocha</h3>
+          <p>Şokolad və kofe sevənlərin ortaq nöqtəsi – şirin bir qaçış</p>
+          <span class="price">5.50 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Mocha')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/flat white.jpg" alt="Flat White" />
+          </div>
+          <h3>Flat White</h3>
+          <p>Daha az köpük, daha çox kofe dadı.</p>
+          <span class="price">5.00 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Flat White')">
+            Sifariş Ver
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="desserts">
+      <h2 class="section-title">Şirin Həzzlər</h2>
+      <div class="menu-container">
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/san sebastian cheesecake.jpg" alt="San Sebastian" />
+          </div>
+          <h3>San Sebastian</h3>
+          <p>Yanıq üzlü, içi isə ipək kimi yumşaq.</p>
+          <span class="price">7.50 AZN</span>
+          <button
+            class="order-btn"
+            onclick="orderWhatsApp('San Sebastian Cheesecake')"
+          >
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/tiramisu dessert.jpg" alt="Tiramisu" />
+          </div>
+          <h3>Tiramisu</h3>
+          <p>İtalyan klassikası: Kofe və maskarpone uyğunluğu.</p>
+          <span class="price">6.50 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Tiramisu')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/chocolate souffle.jpg" alt="Tiramisu" />
+          </div>
+          <h3>Şokoladlı Sufle</h3>
+          <p>
+            İsti qəlbin şokoladlı sirri. İlk toxunuşda axan ləzzət və vanil
+            dondurmasının soyuq hüzuru.
+          </p>
+          <span class="price">6.00 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Tiramisu')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/honey cake.jpg" alt="Tiramisu" />
+          </div>
+          <h3>Medovik (Ballı Tort)</h3>
+          <p>
+            Təbii bal dənələrinin qat-qat hekayəsi. Uşaqlığınızdakı ən şirin
+            xatirənin dadı.
+          </p>
+          <span class="price">5.00 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Tiramisu')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/eclairs.jpg" alt="Tiramisu" />
+          </div>
+          <h3>Ekler Seti</h3>
+          <p>
+            Zərif fransız toxunuşu: İncə xəmirin bol qaymaqlı krem və real
+            Belçika şokoladı ilə rəqsi.
+          </p>
+          <span class="price">5.50 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Tiramisu')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/brownie.webp" alt="Tiramisu" />
+          </div>
+          <h3>Brauni (Brownie)</h3>
+          <p>
+            Sıx şokoladın qozun xırtıltısı ilə qovuşduğu an. Şokolad sevənlərin
+            ən dərin arzusu.
+          </p>
+          <span class="price">5.50 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Tiramisu')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/Limonlu Çizkeyk.jpeg" alt="Tiramisu" />
+          </div>
+          <h3>Limonlu Çizkeyk</h3>
+          <p>
+            Günəşin dadı: Təravətli limon ətri və xırtıldayan biskvit qatının
+            sərinləşdirici rəqsi. Yüngüllük axtaranlara.
+          </p>
+          <span class="price">6.50 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Tiramisu')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/dondurmali-profiterol-d610.jpg" alt="Tiramisu" />
+          </div>
+          <h3>Profiterol Qülləsi</h3>
+          <p>
+            Şokolad şəlaləsi: İçi zərif kremlə dolu mini topların üzərində axan
+            ilıq və tünd Belçika şokoladı.
+          </p>
+          <span class="price">5.00 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Tiramisu')">
+            Sifariş Ver
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="national-sweets"
+      style="
+        background-color: #1a120b;
+        padding: 60px 8%;
+        border-top: 1px solid #d4a373;
+      "
+    >
+      <h2 class="section-title">Milli Həzz</h2>
+      <div class="menu-container">
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/Azərbaycan_paxlavası_02.jpg" alt="Bakı Paxlavası" />
+          </div>
+          <h3>Bakı Paxlavası</h3>
+          <p>
+            Qat-qat açılan zərif xəmir, bol qoz və kəhraba rəngli balın vəhdəti.
+            Əsl Şərq nağılı.
+          </p>
+          <span class="price">5.00 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Bakı Paxlavası')">
+            Sifariş Ver
+          </button>
+        </div>
+
+        <div class="menu-item">
+          <div class="img-container">
+            <img src="img/seki.jpeg" alt="Şəki Paxlavası" />
+          </div>
+          <h3>Şəki Paxlavası</h3>
+          <p>
+            Düyü ununun sehrli toxunuşu və xüsusi şirənin yaratdığı əvəzsiz dad.
+            Şəkidən gələn müdrik ləzzət.
+          </p>
+          <span class="price">5.00 AZN</span>
+          <button class="order-btn" onclick="orderWhatsApp('Şəki Paxlavası')">
+            Sifariş Ver
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <p>
+        &copy; 2026 Aroma Kofe - Müdrik Ağsaqqal tərəfindən xeyir-dua verilib.
+      </p>
+      <p>Ünvan: Bakı şəhəri, Kofe küçəsi 102 | Tel: +994 70 868 51 01</p>
+    </footer>
+
+    <script>
+      function orderWhatsApp(productName) {
+        let phone = "994707414401";
+        // Sənin istədiyin xüsusi mesaj forması:
+        let message = `Salam, Aroma Kofenin saytından yazıram. Mən "${productName}" sifariş vermək istəyirəm.`;
+        let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        window.open(url, "_blank");
+      }
+    </script>
+  </body>
+</html>
